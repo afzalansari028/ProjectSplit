@@ -14,7 +14,7 @@ func ConnectDB() {
 
 	// PostgreSqlInfo := fmt.Sprintf("%s", "port=5432 user=postgres password=king dbname=postgres")
 
-	Postgres, err = sql.Open("postgres", "port=5432 user=postgres password=king dbname=postgres")
+	Postgres, err = sql.Open("postgres", "host=localhost port=5432 user=postgres password=king dbname=postgres")
 	if err != nil {
 		log.Print("Error while connecting db :", err)
 	}
