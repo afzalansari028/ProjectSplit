@@ -23,7 +23,7 @@ func ConnectDB() {
 	if Postgres.Ping(); err != nil {
 		log.Print("Incorrect Db cridentials :", err)
 	} else {
-		log.Print("Postgres connection success...!!!")
+		log.Print("PostgreSQL connection success...!!!")
 	}
 
 }
